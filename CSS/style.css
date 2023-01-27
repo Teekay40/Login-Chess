@@ -1,0 +1,114 @@
+table,td,tr,th,thead,tbody{
+border: 2px solid black;
+border-collapse: collapse;
+}
+
+div#gen
+{
+    display: flex;
+    flex-direction: row;
+}
+
+div#gen *
+{
+    flex: 1 0 auto;
+}
+
+div#gen ul.parent2
+{
+    display: flex;
+    flex-direction: row;
+    }
+
+div#gen ol.parent1
+{
+    display: flex;
+    flex-direction: row;
+}
+
+
+div#first
+{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    border-radius: 7px;
+    
+}
+div#second{
+    background-color:blue;
+    height: 200px;
+    width: 200px;
+    border-radius: 7px;
+    
+    
+}
+div#third{
+    background-color: gold;
+    height: 200px;
+    width: 200px;
+    border-radius: 7px;
+    
+     
+}
+div#position{
+    background-color: grey;
+    display: grid;
+    grid-template-columns: repeat(3 1fr);
+    row-gap: 12%;
+    grid-template-rows: repeat(3 1fr);
+    row-gap: 12%;
+    
+}
+
+
+
+p#main-drop:hover
+{
+    display: block;
+    color: red;
+}
+
+ul.drop{
+    display: none;
+    color: red;
+}
+
+div.grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5%;
+    grid-template-rows: repeat(3,1fr);
+}
+
+
+
+body{
+    background-color: antiquewhite
+}
+div.grid{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    column-gap: 5%;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+}
+div.grid .box{
+    background-color: white;
+    height: 300px;
+    align-self: center;
+    justify-content: center;
+    justify-items: center;
+    text-align: center;
+    box-shadow: 5px 5px 5px gray;
+    transform: skew(15deg);
+    transition-delay: 1s;
+    transition-duration: 5s;
+    transition-timing-function: ease-in;
+}
+
+div.grid .box:hover{
+    transform: rotate(100deg);
+    width: 100px;
+}
